@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flying Stars with Gradient Background</title>
+<style>
+body, html {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #1e3c72 100%);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.star-field {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.star {
+    position: absolute;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.8);
+    animation: fly linear infinite;
+}
+@keyframes fly {
+    0% {
+    transform: translateY(100vh);
+    opacity: 0;
+    }
+    25% {
+    opacity: 1;
+    }
+    75% {
+    opacity: 1;
+    }
+    100% {
+    transform: translateY(-100vh);
+    opacity: 0;
+    }
+}
+.star:nth-child(1) { left: 10%; width: 4px; height: 4px; animation-duration: 6s; }
+.star:nth-child(2) { left: 30%; width: 6px; height: 6px; animation-duration: 8s; }
+.star:nth-child(3) { left: 50%; width: 5px; height: 5px; animation-duration: 7s; }
+.star:nth-child(4) { left: 70%; width: 3px; height: 3px; animation-duration: 9s; }
+.star:nth-child(5) { left: 90%; width: 7px; height: 7px; animation-duration: 5s; }
+.star:nth-child(6) { left: 15%; width: 4px; height: 4px; animation-duration: 10s; }
+.star:nth-child(7) { left: 40%; width: 6px; height: 6px; animation-duration: 8s; }
+.star:nth-child(8) { left: 60%; width: 5px; height: 5px; animation-duration: 11s; }
+.star:nth-child(9) { left: 80%; width: 3px; height: 3px; animation-duration: 6s; }
+.star:nth-child(10) { left: 20%; width: 7px; height: 7px; animation-duration: 12s; }
+.star:nth-child(11) { left: 5%; width: 4px; height: 4px; animation-duration: 13s; }
+.star:nth-child(12) { left: 25%; width: 6px; height: 6px; animation-duration: 9s; }
+.star:nth-child(13) { left: 45%; width: 5px; height: 5px; animation-duration: 10s; }
+.star:nth-child(14) { left: 65%; width: 3px; height: 3px; animation-duration: 14s; }
+.star:nth-child(15) { left: 85%; width: 7px; height: 7px; animation-duration: 15s; }
+.star:nth-child(16) { left: 12%; width: 4px; height: 4px; animation-duration: 11s; }
+.star:nth-child(17) { left: 32%; width: 6px; height: 6px; animation-duration: 8s; }
+.star:nth-child(18) { left: 52%; width: 5px; height: 5px; animation-duration: 7s; }
+.star:nth-child(19) { left: 72%; width: 3px; height: 3px; animation-duration: 12s; }
+.star:nth-child(20) { left: 92%; width: 7px; height: 7px; animation-duration: 6s; }
+</style>
+</head>
+<body>
+<div class="star-field">
+<div class="star"></div>
+<div class="star"></div>
+<div class="star"></div>
+<div class="star"></div>
+<div class="star"></div>
+<div class="star"></div>
+<div class="star"></div>
+<div class="star"></div>
+<div class="star"></div>
+<div class="star"></div>
+<div class="star"></div>
+<div class="star"></div>
+<div class="star"></div>
+<div class="star"></div>
+<div class="star"></div>
+<div class="star"></div>
+<div class="star"></div>
+<div class="star"></div>
+<div class="star"></div>
+<div class="star"></div>
+</div>
+</body>
+</html>
